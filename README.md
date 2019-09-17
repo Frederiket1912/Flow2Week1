@@ -2,6 +2,8 @@
 
 Spørgsmål i tirsdagsopgaven:
 
+Jeg har ikke svaret på alting skriftligt, men her er de mest interessant sppørgsmål/svar.
+
 One-to-one bidirectional
 Run the project and investigate the generated tables (the foreign key). Is there any difference compared to the previous exercise. If not explain why.
 
@@ -26,3 +28,20 @@ To tabeller bliver oprettet, FK ligger i ADDRESS.
 Create a "test" method and insert a number of Customers with Addresses into the tables, using JPA. Which extra step is required for this strategy compared to OneToMany unidirectional?
 
 I Address klassen skulle man lave en constructor der tog imod en customer også.
+
+Many-to-many bidirectional
+
+How can we implement ManyToMany relationships in an OO-language like Java?
+
+Begge klasser kan have en liste af objekter af den anden klasse.
+
+How can we implement ManyToMany relationships in a Relational Database?
+
+Med en joined tabel der har PK fra de to tabeller man kigger på.
+
+Run the project and investigate the generated tables. Explain ALL generated tables.
+
+Der er en ADDRESS og en CUSTOMER tabel som før, og så er der en CUSTOMER_ADDRESS tabel der indeholder FK's til de to andre tabellers PK's.
+
+
+
