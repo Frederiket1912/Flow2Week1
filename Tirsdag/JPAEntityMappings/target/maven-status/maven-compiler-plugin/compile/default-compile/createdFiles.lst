@@ -1,0 +1,5 @@
+entity\Address_.class
+entity\Customer.class
+entity\Customer_.class
+tester\Tester.class
+entity\Address.class
