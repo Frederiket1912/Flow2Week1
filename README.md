@@ -1,5 +1,7 @@
 # Flow2Week1
 
+Note til RESTwithJAXRS: Af en eller anden grund returner mit /add REST endpoint kun phone og id, jeg kunne ikke finde ud af hvorfor jeg ikke fik firstName og lastName med også.
+
 Spørgsmål i tirsdagsopgaven:
 
 Jeg har ikke svaret på alting skriftligt, men her er de mest interessant sppørgsmål/svar.
