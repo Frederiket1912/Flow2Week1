@@ -6,10 +6,18 @@
 package entity;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 /**
@@ -17,7 +25,7 @@ import javax.persistence.OneToOne;
  * @author frede
  */
 @Entity
-public class Address implements Serializable {
+public class Address implements Serializable{
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -25,9 +33,30 @@ public class Address implements Serializable {
     private Integer id;
     private String street;
     private String city;
-    @OneToOne(mappedBy = "address")
-    private Customer customer;
-    
+
+    @ManyToMany(mappedBy = "addresses", cascade = CascadeType.PERSIST)
+    private List<Customer> customers = new ArrayList();
+
+    public List<Customer> getCustomers() {
+        return customers;
+    }
+
+    public void addCustomer(Customer customer) {
+        this.customers.add(customer);
+    }
+
+    public Address(String street, String city, List<Customer> customers) {
+        this.street = street;
+        this.city = city;
+        this.customers = customers;
+    }
+
+
+    public Address(String street, String city) {
+        this.street = street;
+        this.city = city;
+    }
+
 
     public String getStreet() {
         return street;
@@ -45,11 +74,6 @@ public class Address implements Serializable {
         this.city = city;
     }
 
-    public Address(String street, String city) {
-        this.street = street;
-        this.city = city;
-    }
-
     public Address() {
     }
 
@@ -60,5 +84,10 @@ public class Address implements Serializable {
     public void setId(Integer id) {
         this.id = id;
     }
-    
+
+    @Override
+    public String toString() {
+        return "Address{" + "id=" + id + ", street=" + street + ", city=" + city + ", customers=" + customers + '}';
+    }
+
 }
