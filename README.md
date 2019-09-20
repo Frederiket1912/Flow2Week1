@@ -1,6 +1,6 @@
 # Flow2Week1
 
-**Status på ugens opgaver**
+**Status på ugens opgaver:**
 Jeg har lavet tirsdag, onsdag og torsdags opgaverne efter bedste evne. Fik desværre ikke startet på fredagsogaven "ExamPrep_JPQL".
 Torsdagsopgaven er en udbyggelse af onsdagsopgaven, så den er i samme projekt i "Onsdag" mappen.
 
