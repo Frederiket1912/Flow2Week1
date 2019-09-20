@@ -6,7 +6,7 @@ Torsdagsopgaven er en udbyggelse af onsdagsopgaven, så den er i samme projekt i
 
 **Spørgsmål i tirsdagsopgaven:**
 
-Jeg har ikke svaret på alting skriftligt, men her er de mest interessant sppørgsmål/svar.
+Jeg har ikke svaret på alting skriftligt, men her er de mest interessant spørgsmål/svar.
 
 **One-to-one bidirectional
 Run the project and investigate the generated tables (the foreign key). Is there any difference compared to the previous exercise. If not explain why.**
