@@ -4,7 +4,7 @@
 Jeg har lavet tirsdag, onsdag og torsdags opgaverne efter bedste evne. Fik desværre ikke startet på fredagsogaven "ExamPrep_JPQL".
 Torsdagsopgaven er en udbyggelse af onsdagsopgaven, så den er i samme projekt i "Onsdag" mappen.
 
-Spørgsmål i tirsdagsopgaven:
+**Spørgsmål i tirsdagsopgaven:**
 
 Jeg har ikke svaret på alting skriftligt, men her er de mest interessant sppørgsmål/svar.
 
