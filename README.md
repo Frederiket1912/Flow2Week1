@@ -8,13 +8,13 @@ Torsdagsopgaven er en udbyggelse af onsdagsopgaven, så den er i samme projekt i
 
 Jeg har ikke svaret på alting skriftligt, men her er de mest interessant spørgsmål/svar.
 
-**One-to-one bidirectional
-Run the project and investigate the generated tables (the foreign key). Is there any difference compared to the previous exercise. If not explain why.**
+**One-to-one bidirectional**
+**Run the project and investigate the generated tables (the foreign key). Is there any difference compared to the previous exercise. If not explain why.**
 
 Man ender med samme resultat, at CUSTOMER tabellen har en FK der hedder 'ADDRESS_ID', fordi vi valgte at CUSTOMER skulle være owneren.
 
-**One-to-many bidirectional
-Observe the generated code, especially where we find the mappedBy value. Explain**
+**One-to-many bidirectional**
+**Observe the generated code, especially where we find the mappedBy value. Explain**
 
 Syntes jeg fandt en nogenlunde forklaring her: https://stackoverflow.com/questions/10968536/jpa-difference-in-the-use-of-the-mappedby-property-to-define-the-owning-entity
 
